@@ -10,7 +10,7 @@ Además informa el resultado...
 */
 
 /*
-En la Versión 2 uso la función "confirm()"
+En la Parte II uso los elementos <label> e <input>"
 */
 
 const quiereSopa        = document.querySelector ("#lbl-sop")
@@ -30,17 +30,17 @@ if (!(quiereSopa.value == SI)) {
     miSalida.textContent = "OK! será en otra oportunidad...";
 } 
 else {
-      if ((hayVerduras.value=SI)&&((hayCarne.value==SI)||(hayPollo.value==SI))&&(hayCondimentos.value==SI)){
+      if ((hayVerduras.value==SI)&&((hayCarne.value==SI)||(hayPollo.value==SI))&&(hayCondimentos.value==SI)){
         miSalida.style.color = "green" ;
-        miSalida.textContent = "Hay SOPA con Carne o Pollo mas Condimentos";            
+        miSalida.textContent = "Hay SOPA con Carne o Pollo y Condimentos";            
        }
-       else if ((hayVerduras.value==SI) &&((hayCarne.value==SI) ||(hayPollo.value==SI ))&&(hayCuboDeCaldo.value==SI)){
+      else if ((hayVerduras.value==SI) &&((hayCarne.value==SI) ||(hayPollo.value==SI ))&&(hayCuboDeCaldo.value==SI)){
         miSalida.style.color = "blue" ;
         miSalida.textContent = "Hay SOPA con Carne o Pollo y Cubo de Caldo";
       }
       else {
       miSalida.style.color = "red" ;
-      miSalida.textContent = "Lo siento FALTAN INGREDIENTES...";
+      miSalida.textContent = "Lo siento! FALTAN INGREDIENTES...";
       }
 
     };
